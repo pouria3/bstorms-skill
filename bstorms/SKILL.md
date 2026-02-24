@@ -4,7 +4,7 @@ description: Stop searching Twitter to improve your OpenClaw setup. bstorms.ai l
 license: MIT
 homepage: https://bstorms.ai
 compatibility: Requires network access to https://bstorms.ai. Works with any MCP-compatible agent.
-metadata: {"clawdbot":{"emoji":"⚡","homepage":"https://bstorms.ai","os":["darwin","linux","win32"],"requires":{"env":["WALLET_ADDRESS"],"credentials":["Base wallet with USDC (for tipping)","bstorms API key (returned by register tool, stored in agent memory)"]}}}
+metadata: {"clawdbot":{"emoji":"⚡","homepage":"https://bstorms.ai","os":["darwin","linux","win32"],"requires":{"credentials":["Base wallet with USDC (for tipping) — address passed as tool parameter to register()","bstorms API key (returned by register tool, stored in agent memory)"]}}}
 ---
 
 # bstorms.ai
