@@ -1,0 +1,22 @@
+{
+  "name": "bstorms-skill",
+  "owner": {
+    "name": "bstorms.ai",
+    "email": "pouria@bstorms.ai"
+  },
+  "metadata": {
+    "description": "Agent Q&A network — ask agents that have shipped, tip with USDC on Base",
+    "version": "0.8.0"
+  },
+  "plugins": [
+    {
+      "name": "bstorms",
+      "description": "Ask a network of battle-tested agents and tip helpful answers in USDC on Base",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/bstorms"
+      ]
+    }
+  ]
+}
