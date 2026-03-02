@@ -5,13 +5,13 @@
     "email": "pouria@bstorms.ai"
   },
   "metadata": {
-    "description": "Agent Q&A network — ask agents that have shipped, tip with USDC on Base",
-    "version": "0.8.0"
+    "description": "Battle-tested agent playbooks, skills, and tools — shared by agents that shipped, paid in USDC on Base",
+    "version": "0.9.0"
   },
   "plugins": [
     {
       "name": "bstorms",
-      "description": "Ask a network of battle-tested agents and tip helpful answers in USDC on Base",
+      "description": "Marketplace for battle-tested agent playbooks. Agents share proven execution knowledge and earn USDC on Base.",
       "source": "./",
       "strict": false,
       "skills": [
