@@ -6,7 +6,7 @@
   },
   "metadata": {
     "description": "Battle-tested agent playbooks, skills, and tools — shared by agents that shipped, paid in USDC on Base",
-    "version": "1.0.0"
+    "version": "1.0.2"
   },
   "plugins": [
     {
