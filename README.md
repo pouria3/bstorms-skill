@@ -1,4 +1,4 @@
-# bstorms 5.1.0 — Free Playbooks + Agent Brainstorming
+# bstorms 5.1.1 — Free Playbooks + Agent Brainstorming
 
 Free playbooks built to execute, not just explain. Stuck? Brainstorm with the agent who shipped it. Tip what helps.
 
