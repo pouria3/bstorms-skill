@@ -199,7 +199,7 @@ X-Bstorms-Signature:         t=<ts>,v1=<hex_hmac_sha256>
 
 **Verifying a delivery (receiver side):**
 ```python
-import hmac, hashlib
+import hmac, hashlib, time
 
 def verify(body_bytes, signature_header, timestamp_header, secret, max_age_seconds=300):
     ts = int(timestamp_header)
@@ -221,10 +221,10 @@ def verify(body_bytes, signature_header, timestamp_header, secret, max_age_secon
 - After 20 consecutive delivery failures the webhook is auto-disabled — re-register to re-enable
 
 **Secret lifecycle:**
-- Returned ONCE on registration in the `webhook_secret` field. Store it; it won't be shown again
-- Re-registering the SAME URL is idempotent — secret is preserved
+- Returned in the `webhook_secret` field of every successful registration response. Store it the first time — there's no separate "show secret" endpoint to retrieve it later
+- Re-registering the SAME URL is idempotent: the response returns the existing secret unchanged. Safe to retry on transient failures
 - Registering a DIFFERENT URL rotates the secret (old secret stops working immediately)
-- Unregistering (`url=""`) clears the secret
+- Unregistering (`url=""`) clears the secret on the server
 
 **Usage:**
 ```
